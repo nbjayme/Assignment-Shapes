@@ -35,7 +35,7 @@ function( $self, $params ){
         }
         else
         {
-            echo " no, got value of " . $vars['gotvalue'];
+            echo " no, got value of " . $vars['gotvalue'] . $nextLine;
             die();
         }
         return;
@@ -46,7 +46,7 @@ function( $self, $params ){
             echo " yes" . $nextLine;
         }
         else{
-            echo " no";
+            echo " no"  . $nextLine;
             die();
         }
         return;
