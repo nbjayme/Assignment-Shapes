@@ -19,4 +19,5 @@ interface ShapeInterface {
 	 */
 	public function perimeter();
 
+    public function volume();
 }

@@ -4,7 +4,7 @@ namespace Shapes;
 
 include_once('ShapeInterface.php');
 
-class Circle implements ShapeInterface {
+class Sphere implements ShapeInterface {
 
 	protected $radius;
 
@@ -25,7 +25,7 @@ class Circle implements ShapeInterface {
 	 */
 	public function area()
 	{
-		return pi() * pow($this->radius, 2);
+		return 4 * pi() * pow($this->radius,2);
 	}
 
 	/**
@@ -36,12 +36,12 @@ class Circle implements ShapeInterface {
 	 */
 	public function perimeter()
 	{
-		return ( 2 * $this->radius) * pi();
+		return 2 * pi() * $this->radius;
 	}
 
     public function volume()
     {
-        // 2d object no volume
-        return 0;
+        $volume = (4/3) * pi() * pow($this->radius,3);
+        return $volume;
     }
 }
